@@ -7,15 +7,36 @@ from random import randint
 choices = ["rock","paper","scissors"]
 
 #this is the player's choice
-my_choice = input("Choose rock, paper or scissors: ")
+player = input("Choose rock, paper or scissors: ")
 
 #this will be the AI choice -> a random pick from the choices in the array
 computer = choices[randint(0, 2)]
 
 #check to see what the user input
 
-#print outputs whatever is in the round brackets -> in this case it outputs my_choice to the command prompt window
-print("user chose: " + my_choice)
+#print outputs whatever is in the round brackets -> in this case it outputs player to the command prompt window
+print("user chose: " + player)
 
 #validate that the random choice worked for the AI
 print("AI chose: " + computer)
+
+if (computer == player):
+	print("tie")
+
+elif (computer == "rock"):
+	if (player == "scissors"):
+	print("you lose!")
+	else:
+		print("you win!")
+
+elif (computer == "paper"):
+	if (player == "rock"):
+	print("you lose!")
+	else:
+		print("you win!")
+
+elif (computer == "scissors"):
+	if (player == "paper"):
+	print("you lose!")
+	else:
+		print("you win!")
