@@ -1,6 +1,6 @@
 <h1> Rock Paper Scissors - Python tect-based take on a classic!</h1>
 
-Pick your weapon and play against the computer - you'll only get a virtual sting if you lose!
+<h2>*Pick your weapon and play against the computer - you'll only get a virtual sting if you lose!*</h2>
 
 ### Prerequisites
 All you need is [Python 3](https://www.python.org/downloads/releases/3.0) to play.
