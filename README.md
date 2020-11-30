@@ -11,7 +11,7 @@ All you need is [Python 3](https://www.python.org/downloads/releases/3.0) to pla
 Georgey Kurien aka GhostBadger or FalseTesla
 
 ### Usage
-Cline the project, <code>cd</code> to your directory/download, and run the (#game.py) file in a python 3 shell (Terminal on a mac /  Linux, Windows command prompt).
+Cline the project, <code>cd</code> to your directory/download, and run the [create an anchor](#game.py) file in a python 3 shell (Terminal on a mac /  Linux, Windows command prompt).
 
 ### Rules
 Same as the classic game:
