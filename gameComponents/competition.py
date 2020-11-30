@@ -3,30 +3,30 @@ from gameComponents import gameVars
 def fight(player, computer):
 
 	if (computer == player):
-		print("tie")
+		print("\nIt seems we were thinking the same thing that time! But no matter, you will lose!\n")
 
 	# always check for nagative conditions first (the losing case)
 	elif (computer == "rock"):
 		if (player == "scissors"):
 			gameVars.player_lives -= 1
-			print("you lose! player lives: ", gameVars.player_lives)
+			print("\nHAH!! you lose this round!\n")
 		else:
-			print("you win!")
+			print("\nFINE, you win this round!\n")
 			gameVars.computer_lives -= 1
 
 	elif (computer == "paper"):
 		if (player == "rock"):
-			print("you lose! player lives: ", gameVars.player_lives)
+			print("\nHAH!! you lose this round!\n")
 			gameVars.player_lives -= 1
 		else:
-			print("you win!")
+			print("\nFINE, you win this round!\n")
 			gameVars.computer_lives -= 1
 
 
 	elif (computer == "scissors"):
 		if (player == "paper"):
-			print("you lose! player lives: ", gameVars.player_lives)
+			print("\nHAH!! you lose this round!\n")
 			gameVars.player_lives -= 1
 		else:
-			print("you win!")
+			print("\nFINE, you win this round!\n")
 			gameVars.computer_lives -= 1
