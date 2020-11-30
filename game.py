@@ -2,7 +2,7 @@
 from random import randint
 
 # re-import our game variables
-from gameComponents import gameVars, winLose
+from gameComponents import gameVars, competition, winLose
 	
 # set up our game loop
 while gameVars.player is False:
@@ -31,34 +31,10 @@ while gameVars.player is False:
 	#validate that the random choice worked for the AI
 	print("AI chose: " + computer)
 
-	if (computer == gameVars.player):
-		print("tie")
-
-	# always check for nagative conditions first (the losing case)
-	elif (computer == "rock"):
-		if (gameVars.player == "scissors"):
-			gameVars.player_lives -= 1
-			print("you lose! player lives: ", gameVars.player_lives)
-		else:
-			print("you win!")
-			gameVars.computer_lives -= 1
-
-	elif (computer == "paper"):
-		if (gameVars.player == "rock"):
-			print("you lose! player lives: ", gameVars.player_lives)
-			gameVars.player_lives -= 1
-		else:
-			print("you win!")
-			gameVars.computer_lives -= 1
+	#this was where the code is taken from
+	competition.fight(gameVars.player, computer)
 
 
-	elif (computer == "scissors"):
-		if (gameVars.player == "paper"):
-			print("you lose! player lives: ", gameVars.player_lives)
-			gameVars.player_lives -= 1
-		else:
-			print("you win!")
-			gameVars.computer_lives -= 1
 
 	# check player lives and ai lives
 	if gameVars.player_lives <= 0:
